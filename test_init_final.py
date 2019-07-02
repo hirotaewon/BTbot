@@ -1234,10 +1234,12 @@ async def on_message(msg):
 					name="----- 미예약 보스 -----",
 					value= temp_bossTimeSTR1
 					)
+			'''
 			embed.add_field(
 					name="----- 고 정 보 스 -----",
 					value= fixed_information
 					)
+			'''
 			await client.send_message(client.get_channel(channel), embed=embed, tts=False)
 
 			await dbSave()
