@@ -490,6 +490,15 @@ async def dbLoad():
 					minutes1 = beforeBossData[i+1][tmp_len+5:tmp_len+7]
 					seconds1 = beforeBossData[i+1][tmp_len+8:tmp_len+10]
 					
+					print("debug start")
+					print(years1)
+					print(months1)
+					print(days1)
+					print(hours1)
+					print(minutes1)
+					print(seconds1)
+					print("debug end")
+
 					now2 = datetime.datetime.now() + datetime.timedelta(hours = int(basicSetting[0]))
 
 					tmp_now = datetime.datetime.now() + datetime.timedelta(hours = int(basicSetting[0]))
@@ -1373,4 +1382,3 @@ async def on_message(msg):
 			await client.get_channel(channel).send(embed=embed, tts=False)
 
 client.run(access_token)
-
