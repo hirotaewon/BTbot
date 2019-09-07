@@ -468,12 +468,7 @@ async def dbLoad():
 			for j in range(bossNum):
 				startPos = beforeBossData[i+1].find('-')
 				endPos = beforeBossData[i+1].find('(')
-				
-				print("debug start")
-				print(beforeBossData[i+1][startPos+2:endPos])
-				print(bossData[j][0])
-				print("debug end")
-				
+
 				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] :
 				#if beforeBossData[i+1].find(bossData[j][0]) != -1 :
 					tmp_mungcnt = 0
@@ -491,12 +486,7 @@ async def dbLoad():
 					seconds1 = beforeBossData[i+1][tmp_len+8:tmp_len+10]
 					
 					print("debug start")
-					print(years1)
-					print(months1)
-					print(days1)
-					print(hours1)
-					print(minutes1)
-					print(seconds1)
+					print(beforeBossData[i+1][startPos+2:endPos] , ‘    ‘, years1,‘-‘,months1,’-’,days1,’    /    ‘,hours1,‘:’,minutes1,‘:’,seconds1)
 					print("debug end")
 
 					now2 = datetime.datetime.now() + datetime.timedelta(hours = int(basicSetting[0]))
