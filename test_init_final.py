@@ -470,7 +470,7 @@ async def dbLoad():
 				endPos = beforeBossData[i+1].find('(')
 				
 				print("debug start")
-				print([startPos+2:endPos])
+				print(beforeBossData[i+1][startPos+2:endPos])
 				print(bossData[j][0])
 				print("debug end")
 				
