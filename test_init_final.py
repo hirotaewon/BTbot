@@ -469,8 +469,10 @@ async def dbLoad():
 				startPos = beforeBossData[i+1].find('-')
 				endPos = beforeBossData[i+1].find('(')
 				
-				print(startPos)
-				print(endPos)
+				print("debug start")
+				print([startPos+2:endPos])
+				print(bossData[j][0])
+				print("debug end")
 				
 				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] :
 				#if beforeBossData[i+1].find(bossData[j][0]) != -1 :
