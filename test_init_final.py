@@ -470,7 +470,7 @@ async def dbLoad():
 				
 				print("a", beforeBossData[i+1][startPos+2:endPos])
 				print("b", bossData[j][0])
-				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] and startPos != -1 and endPos != -1:
+				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] and beforeBossData[i+1][startPos+2:endPos] != '' :
 
 					tmp_mungcnt = 0
 					tmp_len = beforeBossData[i+1].find(':')
