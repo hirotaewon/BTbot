@@ -467,6 +467,10 @@ async def dbLoad():
 			for j in range(bossNum):
 				startPos = beforeBossData[i+1].find('-')
 				endPos = beforeBossData[i+1].find('(')
+				
+				print("a", beforeBossData[i+1][startPos+2:endPos])
+				print("b", bossData[j][0])
+
 				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] :
 
 					tmp_mungcnt = 0
