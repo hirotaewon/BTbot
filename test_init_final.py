@@ -463,6 +463,8 @@ async def dbLoad():
 	file_data = file_data.decode('utf-8')
 	beforeBossData = file_data.split('\n')
 	
+	print("bossCnt: ", len(beforeBossData))
+
 	if len(beforeBossData) > 1:	
 		for i in range(len(beforeBossData)-1):
 			for j in range(bossNum):
