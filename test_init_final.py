@@ -454,7 +454,6 @@ async def dbSave():
 	contents = repo.get_contents("my_bot.db")
 	repo.update_file(contents.path, "bossDB", information1, contents.sha)
 
-
 async def dbLoad():
 	global LoadChk
 	
@@ -463,14 +462,13 @@ async def dbLoad():
 	file_data = file_data.decode('utf-8')
 	beforeBossData = file_data.split('\n')
 	
-	print("file_data: ", file_data)
-	print("beforeBossData: ", beforeBossData)
-	print("bossCnt: ", len(beforeBossData))
-
 	if len(beforeBossData) > 1:	
 		for i in range(len(beforeBossData)-1):
 			for j in range(bossNum):
-				if beforeBossData[i+1].find(bossData[j][0]) != -1 :
+				startPos = beforeBossData[i+1].find('-')
+				endPos = beforeBossData[i+1].find('(')
+				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] :
+
 					tmp_mungcnt = 0
 					tmp_len = beforeBossData[i+1].find(':')
 					tmp_datelen = beforeBossData[i+1].find('@')
