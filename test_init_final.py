@@ -486,7 +486,7 @@ async def dbLoad():
 					seconds1 = beforeBossData[i+1][tmp_len+8:tmp_len+10]
 					
 					print("debug start")
-					print(beforeBossData[i+1][startPos+2:endPos] , ‘    ‘, years1,‘-‘,months1,’-’,days1,’    /    ‘,hours1,‘:’,minutes1,‘:’,seconds1)
+					print(beforeBossData[i+1][startPos+2:endPos] , " ", years1,"-",months1,"-",days1,"/",hours1,":",minutes1,":",seconds1)
 					print("debug end")
 
 					now2 = datetime.datetime.now() + datetime.timedelta(hours = int(basicSetting[0]))
