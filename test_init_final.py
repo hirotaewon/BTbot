@@ -120,8 +120,8 @@ def init():
 	for i in range(inputData.count('\r')):
 		inputData.remove('\r')
 		
-	for i in range(boss_inputData.count('\r')):
-		boss_inputData.remove('\r')
+	for i in range(boss_inputData.count('\n')):
+		boss_inputData.remove('\n')
 
 	for i in range(fixed_inputData.count('\r')):
 		fixed_inputData.remove('\r')
