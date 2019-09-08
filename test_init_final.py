@@ -469,8 +469,8 @@ async def dbLoad():
 				startPos = beforeBossData[i+1].find('-')
 				endPos = beforeBossData[i+1].find('(')
 
-				if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] :
-				#if beforeBossData[i+1].find(bossData[j][0]) != -1 :
+				#if beforeBossData[i+1][startPos+2:endPos] == bossData[j][0] :
+				if beforeBossData[i+1].find(bossData[j][0]) != -1 :
 					tmp_mungcnt = 0
 					tmp_len = beforeBossData[i+1].find(':')
 					tmp_datelen = beforeBossData[i+1].find('@')
