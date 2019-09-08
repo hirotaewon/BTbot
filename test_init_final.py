@@ -1319,8 +1319,9 @@ async def on_message(msg):
 				information = '``` ```'
 
 			embed = discord.Embed(
-					name ="----- 보스탐 정보 -----",
+					title ="----- 보스탐 정보 -----",
 					description = information,
+					color=0x0000ff,
 					# value = information,
 					inline = False
 					)
