@@ -1287,7 +1287,7 @@ while True:
 						temp_bossTime2.append(bossData[i][0])
 
 				if len(temp_bossTime2) != 0:
-					temp_bossTimeSTR1 = ','.join(map(str, temp_bossTime2))
+					temp_bossTimeSTR1 = ', '.join(map(str, temp_bossTime2))
 					temp_bossTimeSTR1 = '```fix\n' + temp_bossTimeSTR1 + '\n```'
 				else:
 					temp_bossTimeSTR1 = '``` ```'
